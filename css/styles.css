@@ -474,7 +474,6 @@ img {
 
 .footer .container {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
 
@@ -493,6 +492,7 @@ img {
   color: var(--cloud);
   line-height: 1.5;
   max-width: 264px;
+  margin-right: 120px;
 }
 
 .footer .footer-socials .footer-socials-headline {
