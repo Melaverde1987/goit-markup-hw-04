@@ -4,9 +4,11 @@
   --ocean: #404bbf;
   --navy-blue: #2e2f42;
   --slate: #434455;
+  --light-slate: #8e8f99;
   --white: #ffffff;
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
+  --green: #31d0aa;
 
   /* Fonts */
   --font-secondary: Raleway, sans-serif;
@@ -128,6 +130,8 @@ img {
 /* Header */
 .header {
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .header-container {
@@ -234,7 +238,7 @@ img {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.strategy-icon {
+.strategy-icons {
   background-color: var(--cloud);
   padding: 24px;
   margin-bottom: 8px;
@@ -327,6 +331,69 @@ img {
 .team .team-card .team-text .team-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.team .team-card .team-text .team-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team .team-card .team-text .team-icons .team-icon {
+  background-color: var(--iris);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.team .team-card .team-text .team-icons .team-icon:hover,
+.team .team-card .team-text .team-icons .team-icon:focus {
+  background-color: var(--ocean);
+}
+
+/* Customers Section */
+.customers .customers-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--navy-blue);
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
+.customers .customers-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.customers .customers-icon {
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  flex-basis: calc((100% - 120px) / 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.customers .customers-icon:hover,
+.customers .customers-icon:focus {
+  border: 1px solid var(--ocean);
+}
+
+.customers .customers-icon:hover .icon,
+.customers .customers-icon:focus .icon {
+  fill: var(--ocean);
+}
+
+.customers .customers-icon .icon {
+  fill: var(--light-slate);
 }
 
 /* Portfolio */
@@ -355,6 +422,12 @@ img {
   flex-basis: calc((100% - 48px) / 3);
 }
 
+.projects .projects-list .project-card:hover,
+.projects .projects-list .project-card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .projects .projects-list .project-card .project-text {
   padding: 32px 16px;
   border-left: 1px solid var(--cornflower);
@@ -381,6 +454,11 @@ img {
   padding: 100px 0;
 }
 
+.footer .container {
+  display: flex;
+  gap: 120px;
+}
+
 .footer .footer-logo {
   line-height: 1.17;
   margin-bottom: 16px;
@@ -396,4 +474,33 @@ img {
   color: var(--cloud);
   line-height: 1.5;
   max-width: 264px;
+}
+
+.footer .footer-socials .footer-socials-headline {
+  font-size: 16px;
+  color: var(--white);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 15px;
+}
+
+.footer .footer-socials .social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer .footer-socials .social-icons .social-icon {
+  background-color: var(--iris);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.footer .footer-socials .social-icons .social-icon:hover,
+.footer .footer-socials .social-icons .social-icon:focus {
+  background-color: var(--green);
 }
